@@ -1,0 +1,25 @@
+﻿@model ChangeRoleViewModel
+@{
+    ViewData["Title"] = "ChangeRole";
+}
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Change Role </h3>
+            </div>
+
+<div class="card">
+<div class="card-body">
+                    <h4 class="card-title">Role</h4>
+                    <form asp-action="ChangeRole" class="forms-sample mt-4">
+                        <input asp-for="UserId" hidden/>
+                      <div class="form-group mt-4 mb-4">
+                        <label asp-for="RoleId"></label>
+                       <select asp-for="RoleId" asp-items="@Model.Roles"  class="form-control form-control-sm" id="exampleFormControlSelect3">
+                         <option selected disabled>Choose A Role</option>
+                      </select>
+                      </div>
+                      <button type="submit" class="btn btn-gradient-primary me-2">Change</button>
+                    </form>
+                  </div>
+</div>
+

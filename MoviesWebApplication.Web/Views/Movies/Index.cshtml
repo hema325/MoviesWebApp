@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MoviesIndexViewModel>
+
+
+<div class="text-center">
+    <div class="row justify-content-center">
+    <form asp-controller="Movies" asp-action="Search" class="col-12">
+       <div class="input-group input-group-lg">
+  <input name="searchInput"
+    type="text"
+    class="form-control"
+    placeholder="Search A Movie"
+    aria-label="Recipient's username"
+    aria-describedby="button-addon2"
+  />
+  <button class="btn btn-outline-primary" type="submit" id="button-addon2" data-mdb-ripple-color="dark"> Search </button>
+</div>
+    </form>
+    </div>
+</div>
+
+<div class="d-flex justify-content-sm-center justify-content-lg-start flex-wrap gap-4 mt-4">
+@foreach(var movie in Model)
+{
+     <div class="card" style="width: 19rem;">
+       <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+         <img src="~/@movie.MoviePosterUrl" class="img-fluid" style="width: 19rem;height:17rem" />
+         <a href="#!">
+           <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+         </a>
+       </div>
+       <div class="card-body">
+         <h5 class="card-title">@movie.Title</h5>
+         <p class="card-test"><span>Rate : </span>@Math.Round(movie.Rate/10,1)/10</p>
+         <div class="text-end">
+            <a  asp-controller = "Movies" asp-action="Watch" asp-route-Id="@movie.Id" class="btn btn-primary">Watch</a>
+         </div>
+       </div>
+     </div>
+}
+</div>
+
+
+<div class="text-center mt-4">
+    @if (ViewBag.Page > 1)
+    {
+        <a href="@Context.Request.Path?page=@(ViewBag.Page-1)&searchInput=@ViewBag.SearchInput" class="btn btn-outline-primary btn-lg">Prev</a>
+    }
+    @if (!ViewBag.IsLastPage)
+    {
+        <a href="@Context.Request.Path?page=@(ViewBag.Page+1)&searchInput=@ViewBag.SearchInput" class="btn btn-outline-primary btn-lg">Next</a>
+    }
+</div>

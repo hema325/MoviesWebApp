@@ -1,0 +1,126 @@
+﻿@model WatchMovieViewModel
+
+
+<div class="col-lg-12 grid-margin stretch-card mt-6 border-2 border-primary">
+   <div class="card">
+<div class="card-body">
+  <div class="row no-gutters">
+    <div class="col-md-4">                  
+           <img src="~/@Model.MoviePosterUrl" width="300px" height="290px" class="card-img">          
+    </div>
+    <div class="col-md-8">
+        <h5 class="card-title mb-4">@Model.Title</h5>
+        <div class="row">
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Release Year : </h6>
+               <p  class="col-8">@Model.ReleaseYear.ToShortDateString()</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Duration : </h6>
+               <p class="col-8">@Model.Duration</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Language : </h6>
+               <p class="col-8">@Model.Language</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Country : </h6>
+               <p class="col-8">@Model.Country</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Rate : </h6>
+               <p class="col-8">@Math.Round(Model.Rate/10,1)/10</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Generes : </h6>
+               <p class="col-8">
+               <span> | </span>
+               @foreach(var genere in Model.Generes)
+               {
+                  @genere <span> | </span>
+               }
+               </p>
+           </div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+</div>
+
+
+
+
+<div class="col-lg-12 grid-margin stretch-card border-2 border-primary pt-4 pb-4">
+   <div class="card">
+     <div class="card-body text-center">
+        <video class="img-fluid" width="100%" height="100%" controls>
+          <source src="~/@Model.MovieUrl" poster="~/@Model.MoviePosterUrl" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+</div>
+
+
+
+                       
+                 <div class="p-4">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th width="33%"> Actor </th>
+                          <th width="33%"> Name </th>
+                          <th width="33%">Role</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var actor in Model.Actors)
+                    {
+                         <tr>
+                          <td>
+                            <img src="~/@actor.ImgUrl" class="rounded-circle" width="40px" height="40px" alt="image">
+                          </td>
+                          <td> @actor.Name </td>
+                          <td>@actor.Role</td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+                    </div>
+
+                     <div class="p-4">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th width="33%"> Director </th>
+                          <th width="33%"> Name </th>
+                          <th width="33%">Role</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var director in Model.Directors)
+                    {
+                         <tr>
+                          <td>
+                            <img src="~/@director.ImgUrl" class="rounded-circle" width="40px" height="40px" alt="image">
+                          </td>
+                          <td> @director.Name </td>
+                          <td>@director.Role</td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+

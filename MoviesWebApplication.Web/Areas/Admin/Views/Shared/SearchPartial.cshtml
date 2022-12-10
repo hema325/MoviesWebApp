@@ -1,0 +1,19 @@
+﻿@model string
+
+            <div class="grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Search For @Model </h4>
+                    <form asp-action="Search">
+                     <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" name="searchInput" class="form-control" placeholder="Search @Model" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-sm btn-gradient-primary" type="submit">Search</button>
+                        </div>
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>

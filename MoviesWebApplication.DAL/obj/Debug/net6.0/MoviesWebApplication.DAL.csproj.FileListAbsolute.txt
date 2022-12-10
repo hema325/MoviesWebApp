@@ -1,0 +1,24 @@
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\bin\Debug\net6.0\MoviesWebApplication.DAL.deps.json
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\bin\Debug\net6.0\MoviesWebApplication.DAL.dll
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\bin\Debug\net6.0\MoviesWebApplication.DAL.pdb
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.csproj.AssemblyReference.cache
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.AssemblyInfoInputs.cache
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.AssemblyInfo.cs
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.csproj.CoreCompileInputs.cache
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.dll
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\refint\MoviesWebApplication.DAL.dll
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.pdb
+D:\Asp.net Core MVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\ref\MoviesWebApplication.DAL.dll
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\bin\Debug\net6.0\MoviesWebApplication.DAL.deps.json
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\bin\Debug\net6.0\MoviesWebApplication.DAL.dll
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\bin\Debug\net6.0\MoviesWebApplication.DAL.pdb
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.csproj.AssemblyReference.cache
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.AssemblyInfoInputs.cache
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.AssemblyInfo.cs
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.csproj.CoreCompileInputs.cache
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.dll
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\refint\MoviesWebApplication.DAL.dll
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\MoviesWebApplication.DAL.pdb
+D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.DAL\obj\Debug\net6.0\ref\MoviesWebApplication.DAL.dll

@@ -1,0 +1,33 @@
+﻿@model DetailsReviewerViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Reviewer Details </h3>
+            </div>
+
+
+            <div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title mb-4">Reviewer</h4>
+                      <div class="row">
+                          <h5 class="col-2" >Name : </h5>
+                          <p class="col-9">@Model.Name</p>
+                      </div>
+                      <div class="row">
+                          <h5 class="col-2" >Gender : </h5>
+                          <p class="col-9">@Model.Gender</p>
+                      </div>
+                      <div class="row">
+                          <h5 class="col-2" >Biography : </h5>
+                          <div class="col-9">
+                          <p>@Model.Biography</p>
+                          </div>
+                      </div>
+
+               </div>
+             </div>
+           </div>

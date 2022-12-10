@@ -1,0 +1,63 @@
+﻿@model IEnumerable<UsersDetailsViewModel>
+@{
+    ViewData["Title"] = "Index";
+    var returnUrl=Context.Request.Path + Context.Request.QueryString;
+        var searchTitle = "A User";
+}
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Users </h3>
+            </div>
+
+
+             <partial name="SearchPartial" model="@searchTitle" />
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                          <h4 class="card-title">Users Table</h4>
+                    
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> User </th>
+                          <th> Name </th>
+                          <th> Email </th>
+                          <th>Role</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var user in Model)
+                    {
+                         <tr>
+                          <td class="py-1">
+                            <img src="~/@user.ImgUrl" alt="image">
+                          </td>
+                          <td> @user.Name </td>
+                          <td> @user.Email </td>
+                          <td> @user.Role </td>
+                          <td> 
+                              @if(!user.IsBlocked){
+                                  <a asp-action="BlockUser" asp-route-id="@user.Id" asp-route-returnUrl="@returnUrl" class="btn btn-gradient-primary btn-rounded btn-fw">Block</a>
+                              }
+                              else
+                              {
+                                  <a asp-action="UnBlockUser" asp-route-id="@user.Id" asp-route-returnUrl="@returnUrl" class="btn btn-gradient-success btn-rounded btn-fw">Un Block</a>   
+                              }
+                              <a asp-action="ChangeRole" asp-route-returnUrl="@returnUrl" asp-route-userId="@user.Id" class="btn btn-gradient-secondary btn-rounded btn-fw">Change Role</a>
+                              <a asp-action="RemoveUser" asp-route-returnUrl="@returnUrl"  asp-route-id="@user.Id" class="btn btn-gradient-danger btn-rounded btn-fw">Remove</a>
+                              
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+
+               <partial name="PaginationPartial" />
+
+

@@ -1,0 +1,32 @@
+﻿@model EditGenereViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Edit Genere </h3>
+            </div>
+
+<div class="card">
+<div class="auth-form-light text-left p-5">
+                <h4>Genere</h4>
+                <form asp-action="Edit" enctype="multipart/form-data" class="pt-3">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input asp-for="Id" hidden />
+                    <input asp-for="ReturnUrl" hidden />
+                  <div class="form-group">
+                      <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control form-control-lg" placeholder="Genere Name">
+                  </div>
+                  <div class="mt-3">
+                    <input type="submit" value="Edit" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
+                  </div>
+                </form>
+              </div>
+              </div>
+
+
+
+
+

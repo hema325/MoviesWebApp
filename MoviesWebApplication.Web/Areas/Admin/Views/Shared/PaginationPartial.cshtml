@@ -1,0 +1,15 @@
+﻿@{
+    var action = Context.Request.RouteValues["Action"];
+}
+
+<div class="card">
+                  <div class="card-body d-flex justify-content-center">
+                  @if(ViewBag.Page > 1){
+                  <a asp-action="@action" asp-route-page="@(ViewBag.Page - 1)" asp-route-searchInput="@ViewBag.SearchInput" class="btn btn-outline-primary btn-fw">Prev</a>
+                  }
+                  @if (!ViewBag.IsLastPage)
+                  {
+                      <a asp-action="@action" asp-route-page="@(ViewBag.Page + 1)" asp-route-searchInput="@ViewBag.SearchInput" class="btn btn-outline-primary btn-fw">Next</a>
+                  }
+                  </div>
+               </div>

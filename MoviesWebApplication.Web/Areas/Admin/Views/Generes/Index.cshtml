@@ -1,0 +1,54 @@
+﻿@model IEnumerable<GeneresIndexViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    var returnUrl=Context.Request.Path + Context.Request.QueryString;
+    var counter = 1;
+        var searchTitle = "A Genere";
+}
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Generes </h3>
+            </div>
+
+
+           <partial name="SearchPartial" model="@searchTitle" />
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                       <h4 class="card-title">Generes Table</h4>
+                    
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> # </th>
+                          <th> Name </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var genere in Model)
+                    {
+                         <tr>
+                          <td> @(counter++) </td>
+                          <td> @genere.Name </td>
+                          <td>
+                               <a asp-action="Edit" asp-route-returnUrl="@returnUrl" asp-route-genereId="@genere.Id" class="btn btn-gradient-primary btn-rounded btn-fw">Edit</a>
+                              <a asp-action="RemoveGenere" asp-route-returnUrl="@returnUrl" asp-route-id="@genere.Id" class="btn btn-gradient-danger btn-rounded btn-fw">Remove</a>
+                              
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+
+              <partial name="PaginationPartial"/>
+
+               
+
+

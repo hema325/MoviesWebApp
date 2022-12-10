@@ -1,0 +1,67 @@
+﻿@model IEnumerable<AdminMoviesIndexViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    var returnUrl=Context.Request.Path + Context.Request.QueryString;
+    var searchTitle = "A Movie";
+}
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Movies </h3>
+            </div>
+
+
+           <partial name="SearchPartial" model="@searchTitle" />
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                       <h4 class="card-title">Movies Table</h4>
+                    
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Movie</th>
+                          <th> Title </th>
+                          <th> Duration </th>
+                          <th>Rate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var movie in Model)
+                    {
+                         <tr>
+                          <td class="py-1">
+                            <img src="~/@movie.MoviePosterUrl" alt="image">
+                          </td>
+                          <td> @movie.Title </td>
+                          <td>@movie.Duration</td>
+                         <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: @movie.Rate%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> 
+                              <a asp-action="Edit"  asp-route-returnUrl="@returnUrl" asp-route-movieId="@movie.Id" class="btn btn-gradient-primary btn-rounded btn-fw">Edit</a>
+                              <a asp-action="Details" asp-route-movieId="@movie.Id" class="btn btn-gradient-info btn-rounded btn-fw">Details</a>
+                              <a asp-action="RemoveMovie" asp-route-id="@movie.Id" asp-route-returnUrl="@returnUrl" class="btn btn-gradient-danger btn-rounded btn-fw">Remove</a>
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+
+              <partial name="PaginationPartial" />
+
+               
+
+
+
+
+
+

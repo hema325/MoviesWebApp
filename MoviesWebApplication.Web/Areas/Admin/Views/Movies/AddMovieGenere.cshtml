@@ -1,0 +1,38 @@
+﻿@model AddMovieGenereViewModel
+@{
+    ViewData["Title"] = "AddMovieGenere";
+}
+
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Create A New Movie Genere </h3>
+            </div>
+
+<div class="card">
+<div class="auth-form-light text-left p-5">
+                <h4>Movie Genere</h4>
+                <form asp-action="AddMovieGenere" enctype="multipart/form-data" class="pt-3">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input asp-for="returnUrl" hidden />
+                    <input asp-for="MovieId" hidden />
+                  <div class="form-group">
+                      <label>Reviewer</label>
+                    <select asp-for="GenereId" class="form-control form-control-lg" asp-items="@Model.GeneresList">
+                        <option selected disabled>Select Reviewer</option>
+                    </select>
+                  </div>
+                  <div class="mt-3">
+                    <input type="submit" value="Add Movie Genere" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
+                    <a href="@Model.returnUrl" class="btn btn-block btn-gradient-secondary btn-lg font-weight-medium auth-form-btn">Back</a>
+                </div>
+                </form>
+              </div>
+              </div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,247 @@
+﻿@model DetailsMovieViewModel
+@{
+    ViewData["Title"] = "Details";
+    var returnUrl = Context.Request.Path + Context.Request.QueryString;
+    var counter = 1;
+}
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Movie Details </h3>
+            </div>
+
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+   <div class="card">
+<div class="card-body">
+  <div class="row no-gutters">
+    <div class="col-md-4">                  
+           <img src="~/@Model.MoviePosterUrl" style="width:100%;height:20rem" class="card-img">          
+    </div>
+    <div class="col-md-8">
+        <h5 class="card-title mb-4">@Model.Title</h5>
+        <div class="row">
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Release Year : </h6>
+               <p  class="col-8">@Model.ReleaseYear.ToShortDateString()</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Duration : </h6>
+               <p class="col-8">@Model.Duration</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Language : </h6>
+               <p class="col-8">@Model.Language</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Country : </h6>
+               <p class="col-8">@Model.Country</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Rate : </h6>
+               <p class="col-8">@Math.Round(Model.Rate/10,1)/10</p>
+           </div>
+           <div class="row">
+               <h6 class="col-4" >Generes : </h6>
+               <p class="col-8">
+               <span> | </span>
+               @foreach(var genere in Model.Generes)
+               {
+                  @genere.Name <span> | </span>
+               }
+               </p>
+           </div>
+           <div class="text-end">
+                        <a asp-action="Edit" asp-route-returnUrl="@returnUrl" asp-route-movieId="@Model.Id" class="btn btn-gradient-primary btn-rounded btn-fw">Edit</a>
+            </div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+</div>
+
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+   <div class="card">
+     <div class="card-body text-center">
+        <video class="img-fluid" width="100%" height="100%" controls>
+          <source src="~/@Model.MovieUrl" poster="~/@Model.MoviePosterUrl" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                       <h4 class="card-title">Movie Actors</h4>
+                    
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Actor </th>
+                          <th> Name </th>
+                          <th> Gender </th>
+                          <th>Role</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var actor in Model.Actors)
+                    {
+                         <tr>
+                          <td class="py-1">
+                            <img src="~/@actor.ImgUrl" alt="image">
+                          </td>
+                          <td> @actor.Name </td>
+                          <td> @actor.Gender </td>
+                          <td>@actor.Role</td>
+                          <td> 
+                            <a asp-action="RemoveMovieActor" asp-route-returnUrl="@returnUrl" asp-route-actorId="@actor.ActorId" asp-route-movieId="@actor.MovieId" class="btn btn-gradient-danger btn-rounded btn-fw">Remove</a>
+                              
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+                    <div class="text-end mt-4">
+                        <a asp-action="AddMovieActor" asp-route-returnUrl="@returnUrl" asp-route-movieId="@Model.Id" class="btn btn-gradient-primary btn-rounded btn-fw">Add</a>
+                    </div>
+                  </div>
+                </div>
+</div>
+
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                       <h4 class="card-title">Movie Directors</h4>
+                    
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Director </th>
+                          <th> Name </th>
+                          <th> Gender </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var director in Model.Directors)
+                    {
+                         <tr>
+                          <td class="py-1">
+                            <img src="~/@director.ImgUrl" alt="image">
+                          </td>
+                          <td> @director.Name </td>
+                          <td> @director.Gender </td>
+                          <td> 
+                            <a asp-action="RemoveMovieDirector" asp-route-returnUrl="@returnUrl" asp-route-directorId="@director.DirectorId" asp-route-movieId="@director.MovieId" class="btn btn-gradient-danger btn-rounded btn-fw">Remove</a>
+                              
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+                    <div class="text-end mt-4">
+                        <a asp-action="AddMovieDirector" asp-route-returnUrl="@returnUrl" asp-route-movieId="@Model.Id" class="btn btn-gradient-primary btn-rounded btn-fw">Add</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                       <h4 class="card-title">Movie Reviewers</h4>
+                    
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Reviewer </th>
+                          <th> Name </th>
+                          <th> Gender </th>
+                          <th> Rate </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var reviewer in Model.Reviewers)
+                    {
+                         <tr>
+                          <td class="py-1">
+                            <img src="~/@reviewer.ImgUrl" alt="image">
+                          </td>
+                          <td> @reviewer.Name </td>
+                          <td> @reviewer.Gender </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: @((double)reviewer.Stars/5*100)%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> 
+                            <a asp-action="RemoveMovieReviewer" asp-route-returnUrl="@returnUrl" asp-route-reviewerId="@reviewer.ReviewerId" asp-route-movieId="@reviewer.MovieId" class="btn btn-gradient-danger btn-rounded btn-fw">Remove</a>
+                              
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+                    <div class="text-end mt-4">
+                        <a asp-action="AddMovieReviewer" asp-route-returnUrl="@returnUrl" asp-route-movieId="@Model.Id" class="btn btn-gradient-primary btn-rounded btn-fw">Add</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+<div class="col-lg-12 grid-margin stretch-card mt-6">
+                <div class="card">
+                  <div class="card-body">
+                       <h4 class="card-title">Movies Generes</h4>
+                    
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> # </th>
+                          <th> Name </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    @foreach(var genere in Model.Generes)
+                    {
+                         <tr>
+                          <td> @(counter++) </td>
+                          <td> @genere.Name </td>
+                          <td>
+                              
+                              <a asp-action="RemoveMovieGenere" asp-route-movieId="@genere.MovieId" asp-route-returnUrl="@returnUrl" asp-route-genereId="@genere.GenereId" class="btn btn-gradient-danger btn-rounded btn-fw">Remove</a>
+                              
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+                     <div class="text-end mt-4">
+                       <a asp-action="AddMovieGenere" asp-route-returnUrl="@returnUrl" asp-route-movieId="@Model.Id" asp-route-returnUrl="@returnUrl" class="btn btn-gradient-primary btn-rounded btn-fw">Add</a>
+                       </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+  <div class="col-lg-12 grid-margin stretch-card mt-6">
+   <div class="card">
+<div class="card-body text-center">
+                           <a asp-action="index" class="btn btn-gradient-secondary btn-rounded btn-fw">Go Back</a>
+
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,38 @@
+﻿@model AddMovieDirectorViewModel
+@{
+    ViewData["Title"] = "AddMovieDirector";
+}
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Create A New Movie Director </h3>
+            </div>
+
+<div class="card">
+<div class="auth-form-light text-left p-5">
+                <h4>Movie Director</h4>
+                <form asp-action="AddMovieDirector" enctype="multipart/form-data" class="pt-3">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input asp-for="MovieId" hidden />
+                    <input asp-for="returnUrl" hidden />
+                  <div class="form-group">
+                      <label>Director</label>
+                    <select asp-for="DirectorId" class="form-control form-control-lg" asp-items="@Model.DirectorsList">
+                        <option selected disabled>Select Director</option>
+                    </select>
+                  </div>
+                  <div class="mt-3">
+                    <input type="submit" value="Add Movie Director" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
+                    <a href="@Model.returnUrl" class="btn btn-block btn-gradient-secondary btn-lg font-weight-medium auth-form-btn">Back</a>
+  
+                </div>
+                </form>
+              </div>
+              </div>
+
+
+
+
+
+
+
+

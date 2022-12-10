@@ -1,0 +1,19 @@
+﻿@model ChangeImageViewModel
+@{
+    ViewData["Title"] = "Change Iamge";
+}
+
+<h1>Change Your Iamge</h1>
+
+<form asp-action="ChangeImage" enctype="multipart/form-data">
+   <div class="form-group mt-4">
+     <label asp-for="Image" class="form-label"></label>
+     <input class="form-control" asp-for="Image">
+     <span asp-validation-for="Image" class="text-danger"></span>
+   </div>
+   <input type="submit" value="Change" class="btn btn-primary mt-2" />
+</form>
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

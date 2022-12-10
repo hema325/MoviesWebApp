@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MoviesWebApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/MoviesWebApplication.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="text-capitalize">
+    <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <div class="container-fluid">
+                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MoviesWebApplication</a>
+
+                 <div class="collapse navbar-collapse" id="navbarColor01">
+                       <ul class="navbar-nav me-auto">
+                         <li class="nav-item">
+                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home <span class="visually-hidden">(current)</span></a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link text-white" asp-area="" asp-controller="Movies" asp-action="Index">Movies</a>
+                         </li>
+                        @if (User.IsInRole(_Role.Admin))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="Admin" asp-controller="Home" asp-action="Index">DashBoard</a>
+                            </li>
+                        }
+
+                       </ul>
+                           <partial name="LoginStatusPartial" />
+                           @*<form class="d-flex">
+                           <input class="form-control me-sm-2" type="text" placeholder="Search A Movie">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                            </form>*@
+                 </div>
+              </div>
+         </nav>
+</header>    
+     <div class="container pt-4 pb-4">
+            <main role="main">
+            @if (TempData[_TempData.Info] is not null)
+            {
+                <div class="alert alert-info">
+                    <p>@TempData[_TempData.Info]</p>
+                </div>
+            }
+            @if (TempData[_TempData.Success] is not null)
+            {
+                <div class="alert alert-success">
+                    <p>@TempData[_TempData.Success]</p>
+                </div>
+            }
+            @if (TempData[_TempData.Warning] is not null)
+            {
+                <div class="alert alert-warning">
+                    <p>@TempData[_TempData.Warning]</p>
+                </div>
+            }
+            @if (TempData[_TempData.Danger] is not null)
+            {
+                <div class="alert alert-danger">
+                    <p>@TempData[_TempData.Danger]</p>
+                </div>
+            }
+            <div class="pt-2 pb-2">
+            @RenderBody()
+            </div>
+        </main>
+    </div>
+
+    <div class="p-4"></div>
+    <footer class="border-top text-white footer bg-primary">
+        <div class="container">
+            &copy; 2022 - MoviesWebApplication.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

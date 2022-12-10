@@ -1,0 +1,236 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MoviesWebApplication.Web
+build_property.RootNamespace = MoviesWebApplication.Web
+build_property.ProjectDir = D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.Web\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\Asp.netCoreMVC\MoviesWebApplication.Web\MoviesWebApplication.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Actors/CreateActor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWN0b3JzXENyZWF0ZUFjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Actors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWN0b3JzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Actors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWN0b3JzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Actors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWN0b3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Directors/CreateDirector.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlyZWN0b3JzXENyZWF0ZURpcmVjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Directors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlyZWN0b3JzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Directors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlyZWN0b3JzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Directors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlyZWN0b3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Generes/CreateGenere.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJlc1xDcmVhdGVHZW5lcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Generes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Generes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/AddMovieActor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXEFkZE1vdmllQWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/AddMovieDirector.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXEFkZE1vdmllRGlyZWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/AddMovieGenere.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXEFkZE1vdmllR2VuZXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/AddMovieReviewer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXEFkZE1vdmllUmV2aWV3ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/CreateMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXENyZWF0ZU1vdmllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Movies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Reviewers/CreateReviewer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJzXENyZWF0ZVJldmlld2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Reviewers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Reviewers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Reviewers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Shared/Components/NavProfilePicture/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2UHJvZmlsZVBpY3R1cmVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Shared/Components/SidebarProfilePicture/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2lkZWJhclByb2ZpbGVQaWN0dXJlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Shared/PaginationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXFBhZ2luYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Shared/SearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXFNlYXJjaFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Users/AddANewUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQWRkQU5ld1VzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Users/ChangeRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ2hhbmdlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/ChangeImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxDaGFuZ2VJbWFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/ConfirmChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxDb25maXJtQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/ConfirmResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxDb25maXJtUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Identity/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Movies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Movies/Watch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXFdhdGNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Shared/Components/User/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Shared/LoginStatusPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luU3RhdHVzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-cp33mu54jy
+
+[D:/Asp.netCoreMVC/MoviesWebApplication.Web/MoviesWebApplication.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ltnn2o3uik

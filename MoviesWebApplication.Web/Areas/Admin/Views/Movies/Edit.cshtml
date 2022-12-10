@@ -1,0 +1,54 @@
+﻿@model EditMovieViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div class="page-header row justify-content-between">
+              <h3 class="page-title"> Edit Movie </h3>
+            </div>
+
+<div class="card">
+<div class="auth-form-light text-left p-5">
+                <h4>Movie</h4>
+            <form asp-action="Edit" enctype="multipart/form-data" class="pt-3">
+                  <div asp-validation-summary="All" class="text-danger"></div>
+                  <input asp-for="Id" hidden />
+                  <input asp-for="returnUrl" hidden />
+                  <div class="form-group">
+                     <label asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control form-control-lg" placeholder="Title">
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="ReleaseYear"></label>
+                    <input asp-for="ReleaseYear" class="form-control form-control-lg"  placeholder="Release Year">
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="Duration"></label>
+                    <input asp-for="Duration" class="form-control form-control-lg"  placeholder="Duration">
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="Language"></label>
+                    <input asp-for="Language" class="form-control form-control-lg"  placeholder="Language">
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="Country"></label>
+                    <input asp-for="Country" class="form-control form-control-lg"  placeholder="Country">
+                  </div>
+                  <div class="form-group">
+                      <label asp-for="Poster"></label>
+                      <input asp-for="Poster" class="form-control" />
+                  </div>
+                    <input type="submit" value="Edit" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
+                    <a href="@Model.returnUrl" class="btn btn-block btn-gradient-secondary btn-lg font-weight-medium auth-form-btn">Back</a>
+
+                </form>    
+              
+            </div>
+         </div>
+
+
+
+
+
+
